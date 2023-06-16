@@ -1,5 +1,5 @@
-from web.models import Category
+from .models import Category
 
 def menu_links(request):
-    link = Category.objects.all()
-    return dict(request,link=link)
+    links = Category.objects.all()
+    return dict(links=links)
