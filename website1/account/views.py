@@ -19,6 +19,7 @@ from carts.models import Cart, CartItem
 import requests
 
 
+
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -271,3 +272,4 @@ def ChangePassword(request):
 
 
     return render(request,'account/ChangePassword.html')
+    
